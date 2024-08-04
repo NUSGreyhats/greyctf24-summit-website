@@ -1,0 +1,102 @@
+body {
+	position: absolute;
+	color: #FEFEFE;
+	background-color: #0A0B11;
+	margin: 0 auto;
+	padding: 1em 0 1em 0;
+}
+a { 
+	color: #93ffd7;
+	text-decoration: underline; 
+}
+img {
+	width: 100vh;
+	height: auto;
+
+}
+@font-face { 
+	font-family: "unifont"; 
+	src: url("./unifont.woff") format('woff'); 
+}
+pre { 
+	font-family: "unifont", "Lucida Console", monospace, Monaco; 
+	font-size:2vh; 
+	line-height: 1.0;
+	padding-left:3vh;
+}
+.txtdiv {
+	display: block;
+	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+.typewriter {
+	width: 20ch;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid #FFFFFF;
+}
+@keyframes typing {
+	from {
+		width: 0
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
+}
+x { 
+  color: #a7c7e7;
+  text-decoration: none; 
+}
+
+
+.highlighted {
+    background-color: #fff8dc; /* Light yellow background */
+    color: #ff0000; /* Red text color for the heading */
+    padding: 2vh 3vh; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners (optional) */
+    display: inline-block; /* Make the background fit the content */
+}
+
+.announcement-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 95vh;
+    text-align: center;
+	padding: 20px;
+}
+
+.announcement-box h3 {
+    margin-top: 2vh;
+	font-size: 2.5vh;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #222; /* Dark background for the table */
+    /* box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green shadow */ */
+}
+
+.custom-table th,
+.custom-table td {
+	font-size: 2vh; /* Set font size for the entire table */
+    border: 2px solid #000; /* Green border */
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #333; /* Slightly lighter black for header */
+    color: #939fd7; /* Green text for header */
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #333; /* Slightly lighter black for even rows */
+}
+
+.custom-table tr:hover {
+    background-color: #939fd7; /* Dark green hover effect */
+}
