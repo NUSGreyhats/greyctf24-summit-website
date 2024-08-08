@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+	font-family: "unifont";
+	src: url("./unifont.woff") format('woff');
+}
+
 body {
-	position: absolute;
 	color: #FEFEFE;
 	background-color: #0A0B11;
-	margin: 0 auto;
-	padding: 1em 0 1em 0;
+	margin: 0;
+	padding: 1em 0;
+	width: 100vw;
 }
 
 a {
@@ -14,26 +21,46 @@ a {
 img {
 	width: 100vh;
 	height: auto;
-
 }
 
-@font-face {
-	font-family: "unifont";
-	src: url("./unifont.woff") format('woff');
+ul {
+	list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-pre {
-	font-family: "unifont", "Lucida Console", monospace, Monaco;
-	font-size: 2vh;
-	line-height: 1.0;
-	padding-left: 3vh;
+li {
+	padding: 0.5em 1em;
+}
+
+li:before {
+  content: "-";
+	margin-left: -1em;
+	padding-right: 0.5em;
+}
+
+hr {
+	width: 100%; 
+	margin: 3em 0;
 }
 
 .txtdiv {
+	margin: 0 auto;
+	max-width: 69vw;
+
 	display: block;
 	text-align: left;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+
+	font-family: "Space Mono", "unifont", "Lucida Console", monospace, Monaco;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+	.txtdiv {
+		max-width: 85vw;
+		font-size: 0.9em;
+	}
 }
 
 .typewriter {
@@ -56,11 +83,11 @@ pre {
 	}
 }
 
-x {
+.x {
+	font-size: 1.5em;
+	padding-top: 1em;
 	color: #a7c7e7;
-	text-decoration: none;
 }
-
 
 .highlighted {
 	background-color: #fff8dc;
@@ -88,8 +115,9 @@ x {
 }
 
 .custom-table {
+	margin-top: 2em;
 	border-collapse: collapse;
-	width: 80%;
+	width: 100%;
 	background-color: #222;
 	/* Dark background for the table */
 	/* box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green shadow */
@@ -97,7 +125,7 @@ x {
 
 .custom-table th,
 .custom-table td {
-	font-size: 2vh;
+	font-size: 1em;
 	/* Set font size for the entire table */
 	border: 2px solid #000;
 	/* Green border */
@@ -120,4 +148,9 @@ x {
 .custom-table tr:hover {
 	background-color: #939fd7;
 	/* Dark green hover effect */
+}
+
+.list-header {
+	display: inline-block;
+	width: 5em; /* increase if needed */
 }
