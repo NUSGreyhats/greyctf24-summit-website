@@ -17,7 +17,6 @@ for (let i = 0; i < 4; i++) {
     cell.dataset.row = i;
     cell.dataset.col = j;
     bingoBoard.appendChild(cell);
-
   }
 }
 
@@ -65,7 +64,7 @@ function processQRCode(data, scanned = false) {
   if (cell) {
     if (!scanned) {
       const name = names[parseInt(rowIndex) * 4 + parseInt(colIndex)];
-      umami.track('Bingo Stamp', {name: name});
+      umami.track('Bingo Stamp - ' + name);
     }
 
     cell.classList.add('marked');
